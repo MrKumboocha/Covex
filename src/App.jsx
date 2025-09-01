@@ -154,48 +154,48 @@ const brand = {
 // Minutes TBD — replace "TBD" anytime.
 const pricing = [
   {
-    name: "Basic",
-    price: 200,
-    blurb: "Great for solo operators and small studios.",
-    minutes: "TBD",
-    cta: "Get Basic",
+    name: "Core",
+    price: 239,
+    blurb: "For solo owners and small teams.",
+    minutes: "350",
+    cta: "Choose Core",
     popular: false,
     features: [
       "24/7 call answering & intake",
-      "Appointment booking + confirmations",
-      "Google Calendar sync",
-      "Spam + robocall filtering",
+      "Live booking + confirmations",
+      "Spam & robocall filtering",
       "Call transcripts & summaries",
+      "Email support",
     ],
   },
   {
-    name: "Standard",
-    price: 400,
-    blurb: "Perfect for busy storefronts & clinics.",
-    minutes: "TBD",
-    cta: "Get Standard",
-    popular: true,
+    name: "Plus",
+    price: 479,
+    blurb: "Best value for busy storefronts & clinics.",
+    minutes: "1,000",
+    cta: "Choose Plus",
+    popular: true, // shows the “Most popular” badge
     features: [
-      "Everything in Basic",
-      "Multi-location & team routing",
+      "Everything in Core",
+      "Multi-location routing",
       "Two-way SMS follow-ups",
-      "Custom call flows & keywords",
-      "Analytics dashboard",
+      "Minute rollover (1 month)",
+      "Priority email support",
     ],
   },
   {
-    name: "Pro",
-    price: 650,
-    blurb: "Scale-ready with premium support.",
-    minutes: "TBD",
-    cta: "Get Pro",
+    name: "Scale",
+    price: 1199,
+    blurb: "Advanced routing and pooled minutes.",
+    minutes: "3,000 (pooled)",
+    cta: "Choose Scale",
     popular: false,
     features: [
-      "Everything in Standard",
-      "Priority onboarding (72h)",
-      "Dedicated success manager",
+      "Everything in Plus",
+      "Pooled minutes across locations",
       "Advanced reporting & exports",
       "Webhook/CRM integrations",
+      "Priority onboarding (72h)",
     ],
   },
 ];
@@ -522,6 +522,10 @@ function AppInner() {
               </div>
             ))}
           </div>
+          <p className="mt-4 text-xs text-white/50 text-center">
+            Billed for AI talk time only (ringing/hold excluded). Overage: $0.59/min on Core/Plus, $0.49/min on Scale.
+            Minute packs auto-top-up: 250 min $109, 1,000 min $359. Save 15% with annual; $199 setup waived on annual plans.
+          </p>
         </Container>
       </Section>
 
