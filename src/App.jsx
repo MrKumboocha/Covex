@@ -321,30 +321,44 @@ function AppInner() {
 
       {/* NAV */}
       <header className="sticky top-0 z-40 border-b border-white/10 bg-black/60 backdrop-blur">
-        <Container className="flex items-center justify-between py-4">
-          <a href="/" className="flex items-center gap-3" aria-label={brand.name}>
+        <Container className="py-2 md:py-3">
+  {/* 3-column grid keeps the nav perfectly centered no matter how wide the logo is */}
+        <div className="grid grid-cols-2 md:grid-cols-3 items-center">
+          {/* LEFT: brand */}
+          <a href="/" className="flex items-center gap-3 justify-self-start" aria-label={brand.name}>
             <img
-              src="/upscalemedia-transformed.png"
+              src="/covex-logo.png"   /* if your file is named upscalemedia-transformed.png, use that path instead */
               alt={brand.name}
-              className="h-12 w-auto md:h-20 lg:h-24"
+              className="h-20 w-auto md:h-32 lg:h-36"  /* ~2× bigger than before */
               loading="eager"
               decoding="async"
             />
           </a>
-          <nav className="hidden items-center gap-7 text-sm text-white/70 md:flex" role="navigation" aria-label="Primary">
-            <a href="#features" onClick={(e)=>scrollToId(e,'features')} className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Features</a>
+
+          {/* CENTER: nav (stays centered) */}
+          <nav
+            className="hidden md:flex items-center justify-center gap-7 text-sm text-white/70"
+            role="navigation"
+            aria-label="Primary"
+          >
+            <a href="#features"   onClick={(e)=>scrollToId(e,'features')}   className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Features</a>
             <a href="#industries" onClick={(e)=>scrollToId(e,'industries')} className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Industries</a>
-            <a href="#how" onClick={(e)=>scrollToId(e,'how')} className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">How it works</a>
-            <a href="#pricing" onClick={(e)=>scrollToId(e,'pricing')} className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Pricing</a>
-            <a href="#faq" onClick={(e)=>scrollToId(e,'faq')} className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">FAQ</a>
+            <a href="#how"        onClick={(e)=>scrollToId(e,'how')}        className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">How it works</a>
+            <a href="#pricing"    onClick={(e)=>scrollToId(e,'pricing')}    className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Pricing</a>
+            <a href="#faq"        onClick={(e)=>scrollToId(e,'faq')}        className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">FAQ</a>
           </nav>
-          <div className="flex items-center gap-3">
-            <a href="#contact" onClick={(e)=>scrollToId(e,'contact')} className="rounded-xl border border-white/15 px-3 py-2 text-sm text-white/90 hover:bg-white/10">Book a demo</a>
+
+          {/* RIGHT: CTAs */}
+          <div className="flex items-center gap-3 justify-self-end">
+            <a href="#contact" onClick={(e)=>scrollToId(e,'contact')} className="rounded-xl border border-white/15 px-3 py-2 text-sm text-white/90 hover:bg-white/10">
+              Book a demo
+            </a>
             <a href={`tel:${brand.phone.replace(/[^\d+]/g, "")}`} className="hidden rounded-xl bg-white px-3 py-2 text-sm font-semibold text-black hover:bg-white/90 md:inline-block">
               Call us
             </a>
           </div>
-        </Container>
+        </div>
+      </Container>
       </header>
 
       {/* HERO */}
