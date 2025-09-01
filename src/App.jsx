@@ -584,25 +584,31 @@ function AppInner() {
       </Section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/10 py-10">
-        <Container className="flex flex-col items-center justify-between gap-6 text-sm text-white/60 md:flex-row">
-          <div className="flex items-center gap-3">
-            <div className="grid h-8 w-8 place-items-center rounded-lg bg-white text-black"><Icons.Sparkles className="h-4 w-4" /></div>
+      <footer className="border-t border-[rgba(255,255,255,.12)] py-8">
+        <div className="container mx-auto px-6 flex items-center justify-between flex-wrap gap-4">
+          <div className="flex items-center gap-2">
+            <div className="grid place-items-center w-8 h-8 rounded-xl bg-white text-black">
+              {/* simple icon */}
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                <path d="M12 2l2.5 5 5 2.5-5 2.5L12 17l-2.5-5L4.5 9.5 9.5 7z"/>
+              </svg>
+            </div>
             <div>
-              <p className="font-medium text-white/90">{brand.name}</p>
-              <p className="text-xs">© {new Date().getFullYear()} — All rights reserved.</p>
+              <div className="font-semibold text-[#eee]">Covex Voice</div>
+              <div className="text-xs">© {new Date().getFullYear()} — All rights reserved.</div>
             </div>
           </div>
-          <div className="flex items-center gap-6">
-            <a className="hover:text-white" href={`mailto:${brand.supportEmail}`}>Support</a>
-            <a className="hover:text-white" href="#">Privacy</a>
-            <a className="hover:text-white" href="#">Terms</a>
-          </div>
-        </Container>
+
+          <nav className="flex gap-4">
+            <a href="mailto:support@covex.app">Support</a>
+            <a href="/privacy.html">Privacy</a>
+            <a href="/terms.html">Terms</a>
+          </nav>
+        </div>
       </footer>
-    </div>
-  );
-}
+          </div>
+        );
+      }
 
 export default function App() {
   return (
