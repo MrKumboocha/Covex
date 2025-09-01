@@ -323,7 +323,12 @@ function AppInner() {
       <header className="sticky top-0 z-40 border-b border-white/10 bg-black/60 backdrop-blur">
         <Container className="py-1 md:py-1">
           <div className="grid grid-cols-2 md:grid-cols-3 items-center">
-            <a href="/" className="flex items-center gap-3 justify-self-start" ml-[-12px] md:ml-[-24px]" aria-label={brand.name}>
+            {/* LEFT: brand */}
+            <a
+              href="/"
+              className="flex items-center gap-3 justify-self-start -ml-3 md:-ml-6"
+              aria-label={brand.name}
+            >
               <img
                 src="/upscalemedia-transformed.png"
                 alt={brand.name}
@@ -333,30 +338,30 @@ function AppInner() {
               />
             </a>
 
-          {/* CENTER: nav (stays centered) */}
-          <nav
-            className="hidden md:flex items-center justify-center gap-7 text-sm text-white/70"
-            role="navigation"
-            aria-label="Primary"
-          >
-            <a href="#features"   onClick={(e)=>scrollToId(e,'features')}   className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Features</a>
-            <a href="#industries" onClick={(e)=>scrollToId(e,'industries')} className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Industries</a>
-            <a href="#how"        onClick={(e)=>scrollToId(e,'how')}        className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">How it works</a>
-            <a href="#pricing"    onClick={(e)=>scrollToId(e,'pricing')}    className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Pricing</a>
-            <a href="#faq"        onClick={(e)=>scrollToId(e,'faq')}        className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">FAQ</a>
-          </nav>
+            {/* CENTER: nav (stays centered) */}
+            <nav
+              className="hidden md:flex items-center justify-center gap-7 text-sm text-white/70"
+              role="navigation"
+              aria-label="Primary"
+            >
+              <a href="#features"   onClick={(e)=>scrollToId(e,'features')}   className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Features</a>
+              <a href="#industries" onClick={(e)=>scrollToId(e,'industries')} className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Industries</a>
+              <a href="#how"        onClick={(e)=>scrollToId(e,'how')}        className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">How it works</a>
+              <a href="#pricing"    onClick={(e)=>scrollToId(e,'pricing')}    className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Pricing</a>
+              <a href="#faq"        onClick={(e)=>scrollToId(e,'faq')}        className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">FAQ</a>
+            </nav>
 
-          {/* RIGHT: CTAs */}
-          <div className="flex items-center gap-3 justify-self-end">
-            <a href="#contact" onClick={(e)=>scrollToId(e,'contact')} className="rounded-xl border border-white/15 px-3 py-2 text-sm text-white/90 hover:bg-white/10">
-              Book a demo
-            </a>
-            <a href={`tel:${brand.phone.replace(/[^\d+]/g, "")}`} className="hidden rounded-xl bg-white px-3 py-2 text-sm font-semibold text-black hover:bg-white/90 md:inline-block">
-              Call us
-            </a>
+            {/* RIGHT: CTAs */}
+            <div className="flex items-center gap-3 justify-self-end">
+              <a href="#contact" onClick={(e)=>scrollToId(e,'contact')} className="rounded-xl border border-white/15 px-3 py-2 text-sm text-white/90 hover:bg-white/10">
+                Book a demo
+              </a>
+              <a href={`tel:${brand.phone.replace(/[^\d+]/g, "")}`} className="hidden rounded-xl bg-white px-3 py-2 text-sm font-semibold text-black hover:bg-white/90 md:inline-block">
+                Call us
+              </a>
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
       </header>
 
       {/* HERO */}
