@@ -321,19 +321,17 @@ function AppInner() {
 
       {/* NAV */}
       <header className="sticky top-0 z-40 border-b border-white/10 bg-black/60 backdrop-blur">
-        <Container className="py-2 md:py-3">
-  {/* 3-column grid keeps the nav perfectly centered no matter how wide the logo is */}
-        <div className="grid grid-cols-2 md:grid-cols-3 items-center">
-          {/* LEFT: brand */}
-          <a href="/" className="flex items-center gap-3 justify-self-start" aria-label={brand.name}>
-            <img
-              src="/upscalemedia-transformed.png?v=4"
-              alt={brand.name}
-              className="h-24 w-auto md:h-36 lg:h-40"
-              loading="eager"
-              decoding="async"
-            />
-          </a>
+        <Container className="py-1 md:py-1">
+          <div className="grid grid-cols-2 md:grid-cols-3 items-center">
+            <a href="/" className="flex items-center gap-3 justify-self-start" ml-[-12px] md:ml-[-24px]" aria-label={brand.name}>
+              <img
+                src="/upscalemedia-transformed.png"
+                alt={brand.name}
+                className="h-24 w-auto md:h-36 lg:h-40 -mt-2 md:-mt-3"
+                loading="eager"
+                decoding="async"
+              />
+            </a>
 
           {/* CENTER: nav (stays centered) */}
           <nav
@@ -362,7 +360,7 @@ function AppInner() {
       </header>
 
       {/* HERO */}
-      <Section id="home" className="pt-20">
+      <Section id="home" className="pt-8 md:pt-12">
         <Container className="grid items-center gap-10 md:grid-cols-2">
           <div>
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
