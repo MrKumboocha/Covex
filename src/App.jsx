@@ -327,9 +327,9 @@ function AppInner() {
           {/* LEFT: brand */}
           <a href="/" className="flex items-center gap-3 justify-self-start" aria-label={brand.name}>
             <img
-              src="/covex-logo.png"   /* if your file is named upscalemedia-transformed.png, use that path instead */
+              src="/upscalemedia-transformed.png"
               alt={brand.name}
-              className="h-20 w-auto md:h-32 lg:h-36"  /* ~2× bigger than before */
+              className="h-24 w-auto md:h-36 lg:h-40"
               loading="eager"
               decoding="async"
             />
