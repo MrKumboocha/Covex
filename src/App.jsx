@@ -145,10 +145,10 @@ class ErrorBoundary extends React.Component {
 
 // ====== Quick Setup (edit these) =============================================
 const brand = {
-  name: "Ghost Reception",
+  name: "Covex",
   tagline: "An AI receptionist that books while you work.",
   supportEmail: "hello@ghostreception.com",
-  phone: "+1 (888) 555-0123",
+  phone: "+1 (864) 787-8324",
 };
 
 // Minutes TBD — replace "TBD" anytime.
@@ -312,7 +312,7 @@ function AppInner() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
-    console.log("Lead:", form); // TODO: wire to backend/CRM/email
+    console.log("Lead:", form); 
   };
 
   return (
@@ -322,15 +322,15 @@ function AppInner() {
       {/* NAV */}
       <header className="sticky top-0 z-40 border-b border-white/10 bg-black/60 backdrop-blur">
         <Container className="flex items-center justify-between py-4">
-          <div className="flex items-center gap-3">
-            <div className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-white/80 to-white/20 text-black">
-              <Icons.Sparkles className="h-5 w-5" />
-            </div>
-            <div className="text-sm">
-              <p className="font-semibold tracking-tight">{brand.name}</p>
-              <p className="text-white/50">AI Phone Receptionist</p>
-            </div>
-          </div>
+          <a href="/" className="flex items-center gap-3" aria-label={brand.name}>
+            <img
+              src="/upscalemedia-transformed.png"
+              alt={brand.name}
+              className="h-8 w-auto md:h-9"
+              loading="eager"
+              decoding="async"
+            />
+          </a>
           <nav className="hidden items-center gap-7 text-sm text-white/70 md:flex" role="navigation" aria-label="Primary">
             <a href="#features" onClick={(e)=>scrollToId(e,'features')} className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Features</a>
             <a href="#industries" onClick={(e)=>scrollToId(e,'industries')} className="hover:text-white focus:outline-none focus:ring-2 focus:ring-white/40 rounded-md">Industries</a>
@@ -586,17 +586,15 @@ function AppInner() {
       {/* FOOTER */}
       <footer className="border-t border-[rgba(255,255,255,.12)] py-8">
         <div className="container mx-auto px-6 flex items-center justify-between flex-wrap gap-4">
-          <div className="flex items-center gap-2">
-            <div className="grid place-items-center w-8 h-8 rounded-xl bg-white text-black">
-              {/* simple icon */}
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                <path d="M12 2l2.5 5 5 2.5-5 2.5L12 17l-2.5-5L4.5 9.5 9.5 7z"/>
-              </svg>
-            </div>
-            <div>
-              <div className="font-semibold text-[#eee]">Covex Voice</div>
-              <div className="text-xs">© {new Date().getFullYear()} — All rights reserved.</div>
-            </div>
+          <div className="flex items-center gap-3">
+            <img
+              src="/upscalemedia-transformed.png"   
+              alt="Covex"
+              className="h-8 w-auto"
+              loading="eager"
+              decoding="async"
+            />
+            <div className="text-xs">© {new Date().getFullYear()} — All rights reserved.</div>
           </div>
 
           <nav className="flex gap-4">
