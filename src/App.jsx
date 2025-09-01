@@ -327,7 +327,7 @@ function AppInner() {
           {/* LEFT: brand */}
           <a href="/" className="flex items-center gap-3 justify-self-start" aria-label={brand.name}>
             <img
-              src="/upscalemedia-transformed.png"
+              src="/upscalemedia-transformed.png?v=4"
               alt={brand.name}
               className="h-24 w-auto md:h-36 lg:h-40"
               loading="eager"
