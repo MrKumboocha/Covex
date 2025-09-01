@@ -326,7 +326,7 @@ function AppInner() {
             <img
               src="/upscalemedia-transformed.png"
               alt={brand.name}
-              className="h-8 w-auto md:h-9"
+              className="h-12 w-auto md:h-20 lg:h-24"
               loading="eager"
               decoding="async"
             />
