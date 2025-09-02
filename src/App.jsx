@@ -589,10 +589,10 @@ function AppInner() {
                 <input className="rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-sm outline-none placeholder:text-white/40 focus:border-white/30 md:col-span-1" placeholder="Business / Company" value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} />
                 <select className="rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-sm outline-none placeholder:text-white/40 focus:border-white/30 md:col-span-1" value={form.size} onChange={(e) => setForm({ ...form, size: e.target.value })}>
                   <option value="">Company size</option>
-                  <option value="1-3">1–3</option>
-                  <option value="4-10">4–10</option>
-                  <option value="11-25">11–25</option>
-                  <option value="26+">26+</option>
+                  <option value="1-3">1–3 team members</option>
+                  <option value="4-10">4–10 team members</option>
+                  <option value="11-25">11–25 team members</option>
+                  <option value="26+">26+ team members</option>
                 </select>
                 <textarea className="rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-sm outline-none placeholder:text-white/40 focus:border-white/30 md:col-span-2" rows={5} placeholder="What do you want your receptionist to handle?" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} />
                 <button type="submit" className="md:col-span-2 inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-black hover:bg-white/90">
