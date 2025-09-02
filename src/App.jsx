@@ -524,7 +524,7 @@ function AppInner() {
           </div>
           <p className="mt-4 text-xs text-white/50 text-center">
             Billed for AI talk time only (ringing/hold excluded). Overage: $0.59/min on Core/Plus, $0.49/min on Scale.
-            Minute packs auto-top-up: 250 min $109, 1,000 min $359. Save 15% with annual; $199 setup waived on annual plans.
+            Save 15% with annual; $99 setup waived on annual plans.
           </p>
         </Container>
       </Section>
