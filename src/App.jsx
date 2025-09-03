@@ -365,14 +365,23 @@ function AppInner() {
       </header>
 
       {/* HERO */}
-      <Section id="home" className="pt-8 md:pt-12">
-        <Container className="grid items-center gap-10 md:grid-cols-2">
+      <Section id="home" className="pt-8 md:pt-10">
+  {/* Top banner headline (centered, big) */}
+  <Container>
+    <div className="mx-auto max-w-5xl text-center">
+      <h1 className="text-4xl md:text-6xl font-semibold leading-tight tracking-tight">
+        The modern front desk—without the desk.
+      </h1>
+      <p className="mt-4 text-base md:text-xl text-white/70">
+        Everything you expect from a great receptionist—done instantly, consistently, and on-brand.
+      </p>
+    </div>
+  </Container>
+
+  {/* push main hero content down a bit */}
+  <Container className="mt-10 grid items-center gap-10 md:grid-cols-2">
           <div>
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-              <Pill>
-                <Icons.Sparkles className="h-3.5 w-3.5" />
-                {brand.tagline}
-              </Pill>
               <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
                 Let callers book themselves.
                 <span className="block bg-gradient-to-r from-white to-white/50 bg-clip-text text-transparent">Effortless. On-brand. 24/7.</span>
