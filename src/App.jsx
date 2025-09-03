@@ -433,7 +433,7 @@ function AppInner() {
       <Section id="features">
         <Container>
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">The modern front desk—without the desk.</h2>
+            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">Features</h2>
             <p className="mt-3 text-white/70">Everything you expect from a great receptionist—done instantly, consistently, and on-brand.</p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
