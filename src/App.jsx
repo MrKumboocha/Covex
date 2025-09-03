@@ -192,9 +192,9 @@ const pricing = [
     popular: false,
     features: [
       "Everything in Plus",
+      "Customized Voice tailored to your business"
       "Pooled minutes across locations",
       "Advanced reporting & exports",
-      "Webhook/CRM integrations",
       "Priority onboarding (72h)",
     ],
   },
