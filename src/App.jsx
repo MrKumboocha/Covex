@@ -360,14 +360,35 @@ function AppInner() {
             </nav>
 
             {/* RIGHT: CTAs */}
+         
             <div className="flex items-center gap-3 justify-self-end">
-              <a href="#contact" onClick={(e)=>scrollToId(e,'contact')} className="rounded-xl border border-white/15 px-3 py-2 text-sm text-white/90 hover:bg-white/10">
+              {/* Primary CTA stays: book a demo scrolls to your contact section */}
+              <a
+                href="#contact"
+                onClick={(e)=>scrollToId(e,'contact')}
+                className="rounded-xl border border-white/15 px-3 py-2 text-sm text-white/90 hover:bg-white/10"
+              >
                 Book a demo
               </a>
-              <a href={`tel:${brand.phone.replace(/[^\d+]/g, "")}`} className="hidden rounded-xl bg-white px-3 py-2 text-sm font-semibold text-black hover:bg-white/90 md:inline-block">
-                Call us
-              </a>
-            </div>
+
+              {/* Auth-aware secondary CTA: Login or Dashboard */}
+              {(typeof window !== 'undefined' && localStorage.getItem('covex_session_token')) ? (
+                <a
+                  href="/dashboard"
+                  className="hidden md:inline-block rounded-xl bg-white px-3 py-2 text-sm font-semibold text-black hover:bg-white/90"
+                >
+                  Dashboard
+                </a>
+              ) : (
+                <a
+                  href="/login"
+                  className="hidden md:inline-block rounded-xl bg-white px-3 py-2 text-sm font-semibold text-black hover:bg-white/90"
+                >
+                  Login
+                </a>
+              )}
+
+</div>
           </div>
         </Container>
       </header>
