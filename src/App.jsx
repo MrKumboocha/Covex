@@ -427,7 +427,7 @@ function AppInner() {
                 </a>
               </div>
               <div className="mt-8 flex flex-wrap items-center gap-3 text-xs text-white/50">
-                <Pill><Icons.Phone className="h-3.5 w-3.5" /> Twilio-ready</Pill>
+                <Pill><Icons.Phone className="h-3.5 w-3.5" /> Call Ready</Pill>
                 <Pill><Icons.Calendar className="h-3.5 w-3.5" /> Google Calendar</Pill>
                 <Pill><Icons.Shield className="h-3.5 w-3.5" /> Privacy-first</Pill>
               </div>
