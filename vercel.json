@@ -1,32 +1,32 @@
 {
   "rewrites": [
-    { "source": "/login",           "destination": "https://YOUR-DASHBOARD.vercel.app/login" },
-    { "source": "/login/:path*",    "destination": "https://YOUR-DASHBOARD.vercel.app/login/:path*" },
+    { "source": "/login",           "destination": "https://covex-dashboard-clean-one.vercel.app/login" },
+    { "source": "/login/:path*",    "destination": "https://covex-dashboard-clean-one.vercel.app/login/:path*" },
 
-    { "source": "/dashboard",       "destination": "https://YOUR-DASHBOARD.vercel.app/dashboard" },
-    { "source": "/dashboard/",      "destination": "https://YOUR-DASHBOARD.vercel.app/dashboard" },
+    { "source": "/dashboard",       "destination": "https://covex-dashboard-clean-one.vercel.app/dashboard" },
+    { "source": "/dashboard/",      "destination": "https://covex-dashboard-clean-one.vercel.app/dashboard" },
 
-    { "source": "/appointments",    "destination": "https://YOUR-DASHBOARD.vercel.app/appointments" },
-    { "source": "/appointments/",   "destination": "https://YOUR-DASHBOARD.vercel.app/appointments" },
-    { "source": "/appointments/:path*", "destination": "https://YOUR-DASHBOARD.vercel.app/appointments/:path*" },
+    { "source": "/appointments",    "destination": "https://covex-dashboard-clean-one.vercel.app/appointments" },
+    { "source": "/appointments/",   "destination": "https://covex-dashboard-clean-one.vercel.app/appointments" },
+    { "source": "/appointments/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/appointments/:path*" },
 
-    { "source": "/calendar",        "destination": "https://YOUR-DASHBOARD.vercel.app/calendar" },
-    { "source": "/calendar/",       "destination": "https://YOUR-DASHBOARD.vercel.app/calendar" },
-    { "source": "/calendar/:path*", "destination": "https://YOUR-DASHBOARD.vercel.app/calendar/:path*" },
+    { "source": "/calendar",        "destination": "https://covex-dashboard-clean-one.vercel.app/calendar" },
+    { "source": "/calendar/",       "destination": "https://covex-dashboard-clean-one.vercel.app/calendar" },
+    { "source": "/calendar/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/calendar/:path*" },
 
-    { "source": "/services",        "destination": "https://YOUR-DASHBOARD.vercel.app/services" },
-    { "source": "/services/",       "destination": "https://YOUR-DASHBOARD.vercel.app/services" },
-    { "source": "/services/:path*", "destination": "https://YOUR-DASHBOARD.vercel.app/services/:path*" },
+    { "source": "/services",        "destination": "https://covex-dashboard-clean-one.vercel.app/services" },
+    { "source": "/services/",       "destination": "https://covex-dashboard-clean-one.vercel.app/services" },
+    { "source": "/services/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/services/:path*" },
 
-    { "source": "/settings",        "destination": "https://YOUR-DASHBOARD.vercel.app/settings" },
-    { "source": "/settings/",       "destination": "https://YOUR-DASHBOARD.vercel.app/settings" },
-    { "source": "/settings/:path*", "destination": "https://YOUR-DASHBOARD.vercel.app/settings/:path*" },
+    { "source": "/settings",        "destination": "https://covex-dashboard-clean-one.vercel.app/settings" },
+    { "source": "/settings/",       "destination": "https://covex-dashboard-clean-one.vercel.app/settings" },
+    { "source": "/settings/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/settings/:path*" },
 
-    { "source": "/_next/:path*",    "destination": "https://YOUR-DASHBOARD.vercel.app/_next/:path*" },
-    { "source": "/api/:path*",      "destination": "https://YOUR-DASHBOARD.vercel.app/api/:path*" },
-    { "source": "/favicon.ico",     "destination": "https://YOUR-DASHBOARD.vercel.app/favicon.ico" },
-    { "source": "/site.webmanifest","destination": "https://YOUR-DASHBOARD.vercel.app/site.webmanifest" },
-    { "source": "/assets/:path*",   "destination": "https://YOUR-DASHBOARD.vercel.app/assets/:path*" },
-    { "source": "/fonts/:path*",    "destination": "https://YOUR-DASHBOARD.vercel.app/fonts/:path*" }
+    { "source": "/_next/:path*",    "destination": "https://covex-dashboard-clean-one.vercel.app/_next/:path*" },
+    { "source": "/api/:path*",      "destination": "https://covex-dashboard-clean-one.vercel.app/api/:path*" },
+    { "source": "/favicon.ico",     "destination": "https://covex-dashboard-clean-one.vercel.app/favicon.ico" },
+    { "source": "/site.webmanifest","destination": "https://covex-dashboard-clean-one.vercel.app/site.webmanifest" },
+    { "source": "/assets/:path*",   "destination": "https://covex-dashboard-clean-one.vercel.app/assets/:path*" },
+    { "source": "/fonts/:path*",    "destination": "https://covex-dashboard-clean-one.vercel.app/fonts/:path*" }
   ]
 }
