@@ -3,13 +3,6 @@
     { "source": "/login", "destination": "https://covex-dashboard-clean-one.vercel.app/login" },
     { "source": "/login/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/login/:path*" },
 
-    { "source": "/dashboard/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/dashboard/:path*" },
-    { "source": "/appointments/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/appointments/:path*" },
-    { "source": "/calendar/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/calendar/:path*" },
-    { "source": "/services/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/services/:path*" },
-    { "source": "/settings/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/settings/:path*" },
-
-    /* Make dashboard's Next.js assets and APIs load under covex.app */
     { "source": "/_next/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/_next/:path*" },
     { "source": "/api/:path*", "destination": "https://covex-dashboard-clean-one.vercel.app/api/:path*" }
   ]
