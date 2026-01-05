@@ -155,7 +155,7 @@ const brand = {
 const pricing = [
   {
     name: "Core",
-    price: 169,
+    price: 299,
     blurb: "For solo owners and small teams getting started.",
     minutes: "200 included",
     cta: "Choose Core",
@@ -172,7 +172,7 @@ const pricing = [
   },
   {
     name: "Plus",
-    price: 329,
+    price: 499,
     blurb: "Best value for busy storefronts & clinics.",
     minutes: "600 included",
     cta: "Choose Plus",
@@ -190,7 +190,7 @@ const pricing = [
   },
   {
     name: "Scale",
-    price: 549,
+    price: 799,
     blurb: "Advanced routing, pooled minutes, and faster onboarding.",
     minutes: "1,200 (pooled across locations)",
     cta: "Choose Scale",
