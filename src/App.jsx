@@ -227,7 +227,7 @@ const industries = [
 const faqs = [
   {
     q: "Do you do custom designs or templates?",
-    a: "We build premium, conversion-first layouts tailored to your business. The goal is simple: get you more calls, forms, and booked jobs—not just a “pretty website.”",
+    a: "We build premium, conversion-first layouts custom tailored to your business. The goal is simple: get you more calls, forms, and booked jobs—not just a “pretty website.”",
   },
   {
     q: "What does the monthly fee cover?",
@@ -235,7 +235,7 @@ const faqs = [
   },
   {
     q: "How fast can you launch?",
-    a: "One-page sites can launch in ~7–10 days. 5-page sites typically take ~2–3 weeks. 10-page sites take ~4–6 weeks depending on content and approvals.",
+    a: "One-page sites can launch in ~3–7 days. 5-page sites typically take ~1–3 weeks. 10-page sites take ~3–6 weeks depending on content and approvals.",
   },
   {
     q: "Can you add the AI receptionist later?",
