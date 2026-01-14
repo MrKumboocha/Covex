@@ -159,7 +159,7 @@ const websitePricing = [
     setup: 999,
     monthly: 99,
     blurb: "A high-converting one-page site built to drive calls, texts, and form leads.",
-    popular: true,
+    popular: false,
     features: [
       "Premium one-page layout (hero → services → proof → CTA → contact)",
       "Mobile-first + fast load",
@@ -174,7 +174,7 @@ const websitePricing = [
     setup: 2999,
     monthly: 149,
     blurb: "For serious local businesses: service pages, credibility, and conversion flow.",
-    popular: false,
+    popular: true,
     features: [
       "Up to 5 pages (Home, Services, About, Proof, Contact)",
       "Conversion-focused sections + CTAs",
