@@ -171,7 +171,7 @@ const websitePricing = [
   },
   {
     name: "5-Page Growth",
-    setup: 1499,
+    setup: 999,
     monthly: 149,
     blurb: "For serious local businesses: service pages, credibility, and conversion flow.",
     popular: true,
