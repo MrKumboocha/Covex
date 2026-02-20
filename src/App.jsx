@@ -156,8 +156,8 @@ const brand = {
 const websitePricing = [
   {
     name: "One-Page Launch",
-    setup: 499,
-    monthly: 99,
+    setup: 999,
+    monthly: 149,
     blurb: "A high-converting one-page site built to drive calls, texts, and form leads.",
     popular: false,
     features: [
@@ -171,8 +171,8 @@ const websitePricing = [
   },
   {
     name: "5-Page Growth",
-    setup: 999,
-    monthly: 149,
+    setup: 1999,
+    monthly: 199,
     blurb: "For serious local businesses: service pages, credibility, and conversion flow.",
     popular: true,
     features: [
@@ -186,8 +186,8 @@ const websitePricing = [
   },
   {
     name: "10-Page Authority",
-    setup: 2499,
-    monthly: 199,
+    setup: 2999,
+    monthly: 249,
     blurb: "For multi-service businesses that want maximum coverage and trust.",
     popular: false,
     features: [
